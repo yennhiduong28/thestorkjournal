@@ -10,8 +10,7 @@ export default function Home() {
         <div className="flex items-center">
           <img src="storkjournal.png" alt="logo" className="top-2 left-4 h-10" />
         </div>
-
-        <nav className="space-x-10 font-semibold text-sm font-serif tracking-widest">
+          <nav className="space-x-10 font-semibold text-sm font-serif tracking-widest">
           <a href="#home" className="hover:text-red-500 transition-colors">HOME</a>
           <a href="#features" className="hover:text-red-500 transition-colors">FEATURES</a>
           <a href="#about" className="text-red-500 transition-colors">ABOUT</a>
@@ -22,7 +21,7 @@ export default function Home() {
         <h2 className="text-5xl font-serif font-bold mb-4">About Us</h2>
         <p className="max-w-2xl mx-auto text-lg">
           The Stork Journal is an independent publication dedicated to exploring and celebrating Vietnamese culture, heritage, and societal issues.
-        </p>
+        </p>  
       </section>
       <div className="max-w-4xl mx-auto mt-10 p-6 bg-white shadow-md border-l-4 border-red-600">
        {/* Mission and Quote */}
@@ -55,13 +54,12 @@ export default function Home() {
         <p><strong>Opinion</strong>: Read thought-provoking editorials, student perspectives, and guest columns on a wide range of issues.</p>
         <p><strong>Arts & Culture</strong>:Dive into the world of arts, music, theater, and cultural events happening in our schools and community.</p>
         </section>
-
+     {*/ Get Involved /*>
         <section className="my-12">
         <h3 className="text-2xl font-bold text-red-700 font-serif mb-4">Get Involved</h3>
         <p className="max-w-3xl">
         We are always looking for new voices and fresh perspectives. Whether you’re an aspiring journalist, a budding photographer, or someone with a story to tell, we invite you to join our team. Get involved and help us make The Stork Journal a true reflection of our diverse and dynamic student community.
         </p>
-
         </section>
         
 
