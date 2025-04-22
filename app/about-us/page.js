@@ -54,7 +54,7 @@ export default function Home() {
         <p><strong>Opinion</strong>: Read thought-provoking editorials, student perspectives, and guest columns on a wide range of issues.</p>
         <p><strong>Arts & Culture</strong>:Dive into the world of arts, music, theater, and cultural events happening in our schools and community.</p>
         </section>
-     {*/ Get Involved /*>
+     {/* Get Involved */>
         <section className="my-12">
         <h3 className="text-2xl font-bold text-red-700 font-serif mb-4">Get Involved</h3>
         <p className="max-w-3xl">
