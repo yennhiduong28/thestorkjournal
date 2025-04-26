@@ -13,3 +13,23 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Article {
+  id           String   @id @default(cuid())
+  date_publish DateTime @default(now())
+  category     String
+  thumbnail    String
+  title        String   @unique
+  content      Json
+  author       Author   @relation(fields: [authorId], references: [id])
+  authorId     String
+}
+
+model Author {
+  id           String    @id @default(cuid())
+  thumbnail    String
+  position     String
+  name         String
+  introduction String
+  articles     Article[]
+}
