@@ -1,4 +1,5 @@
-import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -6,11 +7,11 @@ export default function Home() {
       <nav className="bg-red-800 h-5"></nav>
       <header className="bg-black text-white justify-between relative px-6 py-4 flex items-center">
         <div className="flex items-center">
-          <img src="/storkjournal_png.1" alt="logo" className="h-16" />
+          <Image src="/storkjournal1.png" alt="logo" width={200} height={200}className="h-16 z-8" />
         </div>
           <nav className="space-x-10 font-semibold text-sm font-serif tracking-widest">
           <a href="#home" className="hover:text-red-500 transition-colors">HOME</a>
-          <a href="#features" className="hover:text-red-500 transition-colors">FEATURES</a>
+          <Link href="/articles" className="hover:text-red-500 transition-colors">FEATURES</Link>
           <a href="#about" className ="text-red-500 transition-colors">ABOUT</a>
           <a href="#contact" className="hover:text-red-500 transition-colors">CONTACT</a>
           <a href="#ourteam" className="hover:text-red-500 transition-colors">OUR TEAM</a>
