@@ -7,14 +7,14 @@ export default function Home() {
       <nav className="bg-red-800 h-5"></nav>
       <header className="bg-black text-white justify-between relative px-6 py-4 flex items-center">
         <div className="flex items-center">
-          <Image src="/storkjournal1.png" alt="logo" width={200} height={200}className="h-16 z-8" />
+         <Image src="/stj.png" alt="logo" width={100} height={70}className="h-11" />
         </div>
           <nav className="space-x-10 font-semibold text-sm font-serif tracking-widest">
-          <a href="#home" className="hover:text-red-500 transition-colors">HOME</a>
-          <Link href="/articles" className="hover:text-red-500 transition-colors">FEATURES</Link>
-          <a href="#about" className ="text-red-500 transition-colors">ABOUT</a>
-          <a href="#contact" className="hover:text-red-500 transition-colors">CONTACT</a>
-          <a href="#ourteam" className="hover:text-red-500 transition-colors">OUR TEAM</a>
+          <Link href="#home" className="hover:text-red-500 transition-colors">HOME</Link>
+          <Link href="#articles" className="hover:text-red-500 transition-colors">ARTICLES</Link>
+          <Link href ="#about" className="text-red-500 transition-colors">ABOUT US</Link>
+          <Link href="#contact" className="hover:text-red-500 transition-colors">CONTACT</Link>
+          <Link href="#ourteam" className="hover:text-red-500 transition-colors">OUR TEAM</Link>
         </nav>
       </header>
 

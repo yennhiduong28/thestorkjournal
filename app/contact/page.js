@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -6,14 +8,14 @@ export default function Home() {
       <nav className="bg-red-800 h-5"></nav>
       <header className="bg-black text-white justify-between px-6 py-4 flex items-center">
         <div className="flex items-center">
-          <img src="/storkjournal_png.1copy" alt="logo" className="h-16" />
+          <Image src="/stj.png" alt="logo" width={100} height={70}className="h-11" />
         </div>
         <div className="space-x-10 font-semibold text-sm font-serif tracking-widest">
-          <a href="#home" className="hover:text-red-500 transition-colors">HOME</a>
-          <a href="#features" className="hover:text-red-500 transition-colors">FEATURES</a>
-          <a href="#about" className="hover:text-red-500 transition-colors">ABOUT</a>
-          <a href="#contact" className="text-red-500 transition-colors">CONTACT</a>
-          <a href="#ourteam" className="hover:text-red-500 transition-colors">OUR TEAM</a>
+        <Link href="#home" className="hover:text-red-500 transition-colors">HOME</Link>
+          <Link href="#articles" className="hover:text-red-500 transition-colors">ARTICLES</Link>
+          <Link href ="#about" className="hover:text-red-500 transition-colors">ABOUT US</Link>
+          <Link href="#contact" className="text-red-500 transition-colors">CONTACT</Link>
+          <Link href="#ourteam" className="hover:text-red-500 transition-colors">OUR TEAM</Link>
         </div>
       </header>
         {/* Contact Section */}
