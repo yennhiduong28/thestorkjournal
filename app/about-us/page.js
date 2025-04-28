@@ -6,15 +6,15 @@ export default function Home() {
     <div className="w-full min-h-screen">
       <nav className="bg-red-800 h-5"></nav>
       <header className="bg-black text-white justify-between relative px-6 py-4 flex items-center">
-        <div className="flex items-center">
+        <div className="flex items-center flex items-center">
          <Image src="/stj.png" alt="logo" width={100} height={70}className="h-11" />
         </div>
-          <nav className="space-x-10 font-semibold text-sm font-serif tracking-widest">
-          <Link href="#home" className="hover:text-red-500 transition-colors">HOME</Link>
-          <Link href="#articles" className="hover:text-red-500 transition-colors">ARTICLES</Link>
-          <Link href ="#about" className="text-red-500 transition-colors">ABOUT US</Link>
-          <Link href="#contact" className="hover:text-red-500 transition-colors">CONTACT</Link>
-          <Link href="#ourteam" className="hover:text-red-500 transition-colors">OUR TEAM</Link>
+          <nav className="space-x-10 text-sm tracking-widest">
+          <Link href= "/" className="hover:text-red-500 transition-colors">HOME</Link>
+          <Link href="/articles" className="hover:text-red-500 transition-colors">ARTICLES</Link>
+          <Link href="/about-us" className="text-red-500 transition-colors">ABOUT US</Link>
+          <Link href="/contact" className="hover:text-red-500 transition-colors">CONTACT</Link>
+          <Link href="/ourteam" className="hover:text-red-500 transition-colors">OUR TEAM</Link>
         </nav>
       </header>
 
@@ -64,16 +64,9 @@ export default function Home() {
         </p>
 
         </section>
-        
-
-          {/* Scroll Icon */}
-          <div className="flex justify-end pt-12">
-            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md">
-              <span className="text-xl">↓</span>
+    
             </div>
           </div>
         </div>
-      </div>
-    </div>
   );
 }

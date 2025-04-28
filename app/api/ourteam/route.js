@@ -11,6 +11,5 @@ export async function GET() {
     });
     return new Response(JSON.stringify(author), {
         headers: { 'Content-Type': 'application/json' },
-      });
-    }
-    
+    });
+}
