@@ -30,19 +30,19 @@ export default function Ourteam() {
           <Image src="/stj.png" alt="logo" width={100} height={70} className="h-11" />
         </div>
         <div className="space-x-10 text-sm tracking-widest">
-          <Link href="/" className="hover:text-red-500 transition-colors">HOME</Link>
-          <Link href="/articles" className="hover:text-red-500 transition-colors">ARTICLES</Link>
-          <Link href="/about-us" className="hover:text-red-500 transition-colors">ABOUT US</Link>
-          <Link href="/contact" className="hover:text-red-500 transition-colors">CONTACT</Link>
-          <Link href="/ourteam" className="text-red-500 transition-colors">OUR TEAM</Link>
+          <Link href="/" className="hover:text-red-600/100 transition-colors">HOME</Link>
+          <Link href="/articles" className="hover:text-red-600/100transition-colors">ARTICLES</Link>
+          <Link href="/about-us" className="hover:text-red-600/100transition-colors">ABOUT US</Link>
+          <Link href="/contact" className="hover:text-red-600/100 transition-colors">CONTACT</Link>
+          <Link href="/ourteam" className="text-red-600/100 transition-colors">OUR TEAM</Link>
         </div>
       </header>
       {/* Team Section */}
       <div className="text-black mx-40 my-15">
-        <p className="text-red-700 mt-8 font-bold text-5xl font-serif mb-8">Meet Our Team</p>
+        <p className="text-red-600 text-center mt-8 font-bold text-5xl tracking-wide mb-8">Meet Our Team</p>
 
         {author && (
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-6 py-10">
             <div className="w-24 h-24 rounded-full overflow-hidden">
               {author.thumbnail && (
                 <Image
@@ -55,7 +55,7 @@ export default function Ourteam() {
               )}
             </div>
             <div>
-              <p className="font-bold text-lg">{author.position}</p>
+              <p className="font-semibold text-lg">{author.position}</p>
               <p>{author.name}</p>
               <p>{author.introduction}</p>
             </div>

@@ -19,18 +19,18 @@ export default function Home() {
       </header>
 
       <section className="text-center my-12">
-        <h2 className="text-5xl font-serif font-bold mb-4">About Us</h2>
+        <h2 className="text-5xl font-bold mb-4 text-red-600">About Us</h2>
         <p className="max-w-2xl mx-auto text-lg text-black">
           The Stork Journal is an independent publication dedicated to exploring and celebrating Vietnamese culture, heritage, and societal issues.
         </p>  
       </section>
 
-      <div className="max-w-4xl mx-auto mt-10 p-6 bg-white shadow-md border-l-4 border-red-600">
+      <div className="max-w-4xl mx-auto mt-10 p-6 bg-white">
         <div className="w-full min-h-screen">
           {/* Mission and Quote */}
           <section className="md:flex md:space-x-12 my-12">
             <div className="md:w-1/2 overflow-hidden">
-              <h3 className="text-2xl font-bold text-red-700 font-serif mb-4">Our Vision</h3>
+              <h3 className="text-2xl font-bold text-red-500/80 mb-4">Our Vision</h3>
               <p>
                 At The Stork Journal, we believe in the power of student voices from diverse backgrounds. We welcome students from any school in Vietnam (and globally) to express their unique ideas, share their experiences, and contribute to the broader dialogue within our community. We aim to foster a culture of curiosity, critical thinking, and open-mindedness.
               </p>
@@ -42,14 +42,14 @@ export default function Home() {
 
       {/* Meet the Team */}
       <section className="my-12">
-        <h3 className="text-2xl font-bold text-red-700 font-serif mb-4">Meet The Team</h3>
+        <h3 className="text-2xl font-bold text-red-500/80 mb-4">Meet The Team</h3>
         <p className="max-w-3xl">
         Our diverse team of writers, editors, web developers and photographers comes from various schools, each bringing unique perspectives and talents. We are passionate about journalism and storytelling, and we share a common goal: to make The Stork Journal a reliable and engaging source of information for students across our community.
         </p>
       </section>
       {/* What we cover */}
       <section className="my-12">
-        <h3 className="text-2xl font-bold text-red-700 font-serif mb-4">What We Cover</h3>
+        <h3 className="text-2xl font-bold text-red-500/80 mb-4">What We Cover</h3>
         <p className="max-w-3xl">
         <strong>News</strong>: Stay updated with the latest happenings, events, and announcements from the local community and the world.</p>
         <p><strong>Features</strong>: Explore in-depth stories, profiles of students and staff, and special reports on topics that matter to our readers.</p>
@@ -58,7 +58,7 @@ export default function Home() {
         </section>
 
         <section className="my-12">
-        <h3 className="text-2xl font-bold text-red-700 font-serif mb-4">Get Involved</h3>
+        <h3 className="text-2xl font-bold text-red-500/80 mb-4">Get Involved</h3>
         <p className="max-w-3xl">
         We are always looking for new voices and fresh perspectives. Whether you’re an aspiring journalist, a budding photographer, or someone with a story to tell, we invite you to join our team. Get involved and help us make The Stork Journal a true reflection of our diverse and dynamic student community.
         </p>
