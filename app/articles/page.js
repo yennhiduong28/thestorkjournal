@@ -22,7 +22,7 @@ export default function Articles() {
     const others = articles.slice(3);
 
     return (
-        <div className="w-full min-h-screen flexs">
+        <div className="w-full min-h-screen">
         <nav className="bg-red-800 h-5"></nav>
         <header className="bg-black text-white justify-between px-6 py-4 flex items-center">
           <div className="flex items-center">
@@ -52,7 +52,7 @@ export default function Articles() {
             {/* Secondary Articles */}
             <section className="max-w-6xl mx-auto mt-16 px-4 grid grid-cols-1 md:grid-cols-2 gap-10">
                 {secondary.map(article => (
-                    <div key={article.id} className="bg-white rounded-lg hover:shadow-lg transition duration-200">
+                    <div key={article.id} className="bg-white rounded-lg hover:shadow-lg">
                         <Image src="/storkjournal.png" width={600} height={300} alt="secondary" className="rounded-t-lg w-full object-cover h-56" />
                         <div className="p-4">
                             <p className="text-gray-500 text-sm mb-1">{article.author.name}</p>
@@ -66,7 +66,7 @@ export default function Articles() {
 
             {/* Other Articles */}
             <section className="max-w-6xl mx-auto mt-20 mb-20 px-4">
-                <h2 className="text-2xl font-bold mb-6 border-b pb-2">More Articles</h2>
+                <h2 className="text-2xl font-bold mb-6 border-b pb-2 text-red-700">More Articles</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                     {others.map(article => (
                         <div key={article.id} className="bg-white p-4 rounded-lg hover:shadow-md transition">

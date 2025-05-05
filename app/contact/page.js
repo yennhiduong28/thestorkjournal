@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="w-full min-h-screen flexs">
+    <div className="w-full min-h-screen">
       <nav className="bg-red-800 h-5"></nav>
       <header className="bg-black text-white justify-between px-6 py-4 flex items-center">
         <div className="flex items-center">
@@ -42,3 +42,5 @@ export default function Home() {
     </div>
   )
 }
+
+
