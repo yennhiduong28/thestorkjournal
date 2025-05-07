@@ -21,7 +21,7 @@ export default function Article() {
     }, [articleId]);
 
     return (
-        <div className="max-w-4xl mx-auto px-6 py-12 text-gray-800">
+        <div className="max-w-4xl mx-auto px-6 py-12 text-gray-800 bg-white">
             {element.id && (
                 <article key={element.id}>
                     <div className="text-center mb-6">
