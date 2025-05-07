@@ -22,7 +22,7 @@ export default function Articles() {
     const others = articles.slice(3);
 
     return (
-        <div className="w-full min-h-screen">
+        <div className="w-full min-h-screen bg-white">
         <nav className="bg-red-800 h-5"></nav>
         <header className="bg-black text-white justify-between px-6 py-4 flex items-center">
           <div className="flex items-center">
@@ -41,7 +41,7 @@ export default function Articles() {
                 <section className="bg-white mt-10 max-w-6xl mx-auto overflow-hidden flex hover:shadow-lg flex-col md:flex-row">
                     <Image src="/3.png" width={700} height={500} className="object-cover w-full md:w-1/2" alt="featured" />
                     <div className="p-6 md:w-1/2 flex flex-col justify-center">
-                        <h1 className="text-4xl font-bold mb-4 leading-snug hover:text-red-600 transition-colors">
+                        <h1 className="text-4xl font-bold mb-4 text-black leading-snug hover:text-red-600 transition-colors">
                             <Link href={`/articles/${featured.id}`}>{featured.title}</Link>
                         </h1>
                         <p className="text-gray-600 text-sm">By {featured.author.name}</p>
@@ -56,7 +56,7 @@ export default function Articles() {
                         <Image src="/storkjournal.png" width={600} height={300} alt="secondary" className="rounded-t-lg w-full object-cover h-56" />
                         <div className="p-4">
                             <p className="text-gray-500 text-sm mb-1">{article.author.name}</p>
-                            <h3 className="text-xl font-semibold hover:text-red-600 transition-colors">
+                            <h3 className="text-xl text-black font-semibold hover:text-red-600 transition-colors">
                                 <Link href={`/articles/${article.id}`}>{article.title}</Link>
                             </h3>
                         </div>
@@ -70,7 +70,7 @@ export default function Articles() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                     {others.map(article => (
                         <div key={article.id} className="bg-white p-4 rounded-lg hover:shadow-md transition">
-                            <h4 className="text-lg font-semibold mb-1 hover:text-red-600">
+                            <h4 className="text-lg text-black font-semibold mb-1 hover:text-red-600">
                                 <Link href={`/articles/${article.id}`}>{article.title}</Link>
                             </h4>
                             <p className="text-gray-500 text-sm">{article.author.name}</p>

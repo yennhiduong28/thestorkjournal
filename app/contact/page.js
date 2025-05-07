@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full min-h-screen bg-white">
       <nav className="bg-red-800 h-5"></nav>
       <header className="bg-black text-white justify-between px-6 py-4 flex items-center">
         <div className="flex items-center">
@@ -20,7 +20,7 @@ export default function Home() {
         </div>
       </header>
       {/* Contact Section */}
-      <section className="flex flex-col my-12">
+      <section className="flex text-black flex-col my-12">
         <h1 className="text-center text-red-600 font-bold text-5xl">Contact With Us</h1>
         <p className="mt-10 ml-90 text-md md:w-1/2 overflow-hidden tracking-wide ">
           We’d love to hear from you!

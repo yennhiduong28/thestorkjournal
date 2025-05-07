@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 export default function Ourteam() {
   const router = useRouter();
-  const [author, setAuthor] = useState({});
+  const [author, setAuthor] = useState([]);
 
   useEffect(() => {
     fetch(new Request(
@@ -20,10 +20,10 @@ export default function Ourteam() {
         },
       }
     )).then(res => res.json())
-      .then(data => setAuthor(data[0])); // pick the first author or loop later if multiple
+      .then(data => setAuthor(data)); // pick the first author or loop later if multiple
   }, []);
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full min-h-screen bg-white">
       <nav className="bg-red-800 h-5"></nav>
       <header className="bg-black text-white justify-between px-6 py-4 flex items-center">
         <div className="flex items-center">
@@ -41,7 +41,7 @@ export default function Ourteam() {
       <div className="text-black mx-40 my-15">
         <p className="text-red-600 text-center mt-8 font-bold text-5xl tracking-wide mb-8">Meet Our Team</p>
 
-        {author && (
+        {author.map(author => (
           <div className="flex items-center space-x-6 py-10">
             <div className="w-24 h-24 rounded-full overflow-hidden">
               {author.thumbnail && (
@@ -59,7 +59,7 @@ export default function Ourteam() {
               <p>{author.name}</p>
               <p>{author.introduction}</p>
             </div>
-          </div>
+          </div>)
         )}
       </div>
     </div>

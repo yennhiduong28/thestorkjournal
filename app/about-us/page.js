@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full min-h-screen bg-white">
       <nav className="bg-red-800 h-5"></nav>
       <header className="bg-black text-white justify-between relative px-6 py-4 flex items-center">
         <div className="flex items-center flex items-center">
@@ -18,14 +18,14 @@ export default function Home() {
         </nav>
       </header>
 
-      <section className="text-center my-12">
+      <section className="text-center text-black my-12">
         <h2 className="text-5xl font-bold mb-4 text-red-600">About Us</h2>
         <p className="max-w-2xl mx-auto text-lg text-black">
           The Stork Journal is an independent publication dedicated to exploring and celebrating Vietnamese culture, heritage, and societal issues.
         </p>  
       </section>
 
-      <div className="max-w-4xl mx-auto mt-10 p-6 bg-white">
+      <div className="max-w-4xl text-black mx-auto mt-10 p-6 bg-white">
         <div className="w-full min-h-screen">
           {/* Mission and Quote */}
           <section className="md:flex md:space-x-12 my-12">
