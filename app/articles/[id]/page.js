@@ -49,12 +49,16 @@ export default function Article() {
                             <p key={block.id} dangerouslySetInnerHTML={{ __html: block.data.text }} />
                         ))}
                     </div>
-
+                    <div className="text-sm">
+                        {element.date_publish.slice(0, 10)}
+                    </div>
                     <div className="mt-12 text-sm text-gray-600 border-t pt-4 text-right">
+                        <div className="font-sm">{element.date_publish} </div>
                         By <span className="font-medium">{element.author?.name}</span>
                     </div>
                 </article>
             )}
         </div>
+
     )
 }
