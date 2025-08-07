@@ -3,6 +3,7 @@ const prisma = new PrismaClient();
 export async function GET() {
     const author = await prisma.author.findMany({
         select: {
+            id: true,
             name: true,
             position: true,
             introduction: true,

@@ -1,3 +1,3 @@
-thestorkjournalproject = owerner Nhi 
-Created Apirl 2025
-hihiii hello
+The Stork Journal
+Owner: Duong Yen Nhi
+April 2025

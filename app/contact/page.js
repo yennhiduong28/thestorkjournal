@@ -26,6 +26,7 @@ export default function Home() {
           We’d love to hear from you!
           Whether you have a story to share, feedback for our team, or a question about how to get involved, we’re all ears. The Stork Journal thrives on connection, collaboration, and conversation—and that starts with you.
           📬 Reach Out
+        </p>
           <br />Email: 📩 tsj.thestorkjournal@gmail.com
           <br /><br />
           <p className="text-red-600 text-lg font-semibold "> Join Our Team </p>
@@ -37,7 +38,7 @@ export default function Home() {
           Follow us on social media to stay updated on our latest stories, student features, and events.
           <br /><br />
           <p className="text-red-500/80 italic font-semibold ">Thank you for supporting The Stork Journal—where student voices matter.</p>
-        </p>
+        
       </section>
     </div>
   )

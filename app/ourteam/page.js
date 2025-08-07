@@ -42,7 +42,7 @@ export default function Ourteam() {
         <p className="text-red-600 text-center mt-8 font-bold text-5xl tracking-wide mb-8">Meet Our Team</p>
 
         {author.map(author => (
-          <div className="flex items-center space-x-6 py-10">
+          <div key={author.id} className="flex items-center space-x-6 py-10">
             <div className="w-24 h-24 rounded-full overflow-hidden">
               {author.thumbnail && (
                 <Image
